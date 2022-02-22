@@ -1,0 +1,20 @@
+<ngb-carousel  [showNavigationArrows]="false" >
+  <ng-template ngbSlide *ngFor="let image of images" >
+    <div class="wrapper index-coursel-rounde">
+      <div class="row p-5 p-md-5 mb-4 text-white">
+        <div class="col-md-6 px-0">
+          <h1 class="display-3 italic index-coursel-rounde">{{image.title}}</h1>
+          <p class="lead my-3 index-coursel-rounde" >{{image.description}} </p>
+        </div>
+        <div class="col-md-6">
+            <img class="" style="height: 300px; width: 100%;"
+              [src]="image.src" />
+        </div>
+      </div>
+    </div>
+    <div class="carousel-caption">
+      <p class="lead mb-0"><a href="#" class="text-white fw-bold text-decoration-none btn btn-primary index-coursel-rounde">İncele</a></p>
+    </div>
+  </ng-template>
+</ngb-carousel>
+<br />

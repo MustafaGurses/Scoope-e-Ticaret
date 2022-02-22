@@ -1,0 +1,49 @@
+<div class="row" id="navigation">
+  <div class="col-md-12">
+    <nav class="nav" id="nav">
+      <ul class="main-nav" id="main-nav">
+        <li class="tab-link ust" *ngFor="let category of categories" id="category{{category.id}}">
+          <a class="nav-link link-secondary" href="#" id="categoryUrl{{category.id}}"></a>
+          <div class="deneme" id="subNav{{category.id}}">
+            <div class="sub-nav-center">
+              <div class="sub-nav-outer">
+                <div *ngFor="let innerCategory of category.inCategoryName" class="normal-column">
+                  {{innerCategory.inCategoryName}}
+                  <ul>
+                    <li>
+                      bla bla
+                    </li>
+                  </ul>
+                </div>
+                <div *ngFor="let innerCategory of category.inCategoryName" class="normal-column">
+                  {{innerCategory.inCategoryName}}
+                  <ul>
+                    <li>
+                      bla bla
+                    </li>
+                  </ul>
+                </div>
+                <div *ngFor="let innerCategory of category.inCategoryName" class="normal-column">
+                  {{innerCategory.inCategoryName}}
+                  <ul>
+                    <li>
+                      bla bla
+                    </li>
+                  </ul>
+                </div>
+                <div *ngFor="let innerCategory of category.inCategoryName" class="normal-column">
+                  {{innerCategory.inCategoryName}}
+                  <ul>
+                    <li>
+                      bla bla
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>

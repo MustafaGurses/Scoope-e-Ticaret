@@ -1,0 +1,8 @@
+.carousel-caption {
+    left: 1%;
+    text-align: right;
+    max-width: 300px;
+    right: auto;
+    padding:5px;
+}
+.index-coursel-rounde{ color: black;  border-radius: 3em 3em 3em 3em;  }

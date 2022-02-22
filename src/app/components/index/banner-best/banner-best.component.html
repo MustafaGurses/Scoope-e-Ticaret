@@ -1,0 +1,30 @@
+<ul>
+  <li>
+    <div class="row">
+      <div class="col-lg-1 col-md-1  d-flex align-items-center justify-content-sm-end">
+        <i (click)="scrollLeft()" [ngClass]="this.leftDisabled ? 'visibility':''" class="bi bi-caret-left"
+          style="font-size: 32px"></i>
+      </div>
+      <div id="bestStory" class="col-md-10  d-flex  overflow-hidden" scrollX="true" #widgetsContent (scroll)="onScroll($event)"
+        [ngClass]="this.rightDisabled ? 'width':this.leftDisabled?'width':''">
+        <div class="tabcontent story-area">
+          <div class="story-container-1">
+            <div  class="single-story zoom" *ngFor="let image of images">
+              <img [src]="image.src" class="single-story-bg "/>
+              <div class="story-author">
+                <a href="#">
+                  <img [src]="image.src"/>
+                </a>
+                <p>{{image.title}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-1 col-md-1  d-flex align-items-center justify-content-sm-start">
+        <i (click)="scrollRight()" [ngClass]="this.rightDisabled ? 'visibility':''" class="bi bi-caret-right"
+          style="font-size: 32px"></i>
+      </div>
+    </div>
+  </li>
+</ul>

@@ -1,0 +1,49 @@
+.deneme{
+  display: block;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 350px;
+  max-height: 0;
+  background: #fff;
+  box-shadow: inset 0 0 1px 1px #ebebeb;
+  border-radius: 0 0 6px 6px;
+  overflow: hidden;
+}
+.sub-nav-center {
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 25px;
+  width: 100%;
+}
+.sub-nav-outer {
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+ .normal-column {
+  width: auto;
+  height: 300px;
+  float: left;
+  padding: 0 15px 0 1px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.deneme:hover .deneme {
+    display: block;
+    margin-top: 0;
+ }
+.ust-item {
+    padding: 0px
+}
+.deneme.enable {
+    max-height: 350px;
+  }
+.deneme.animation {
+    transition: max-height 250ms;
+  }
+  .highlight {
+    z-index: 1;
+}
